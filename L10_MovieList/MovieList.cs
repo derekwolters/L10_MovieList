@@ -44,13 +44,9 @@ namespace L10_MovieList
 
                 OutputGenreList(genreList);
 
-                userGenre = genreList[IntInputValidator.ValidateInput()-1];
+                userGenre = genreList[IntInputValidator.ValidateInput()-1];                
 
-                foreach(Movie m in movies)
-                {
-                    if (m.getGenre() == userGenre)
-                        m.printTitle(userGenre);
-                }
+                OutputList(BuildMovieList(movies, userGenre));
 
                 Exit.ExitProgram();
             }                 
@@ -76,6 +72,29 @@ namespace L10_MovieList
             foreach (string s in genreList)
             {
                 Console.Write(genreList.IndexOf(s) + 1 + "     ");
+                Console.WriteLine(s);
+            }
+        }
+
+        public static List<string> BuildMovieList(List<Movie> movies, 
+                                                    string userGenre)
+        {
+            List <string> sortedList = new List<string>();
+
+            foreach (Movie m in movies)
+            {
+                if (m.getGenre() == userGenre)
+                    sortedList.Add(m.getTitle());
+
+                sortedList.Sort();
+            }
+            return sortedList;
+        }
+
+        public static void OutputList(List<string> List)
+        {
+            foreach (string s in List)
+            {
                 Console.WriteLine(s);
             }
         }

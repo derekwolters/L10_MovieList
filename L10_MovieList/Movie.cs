@@ -47,6 +47,11 @@ namespace L10_MovieList
             return title;
         }
 
+        public string getTitle()
+        {
+            return this.title;
+        }
+
         public void printTitle(string genre)
         {
             Console.WriteLine(title);
