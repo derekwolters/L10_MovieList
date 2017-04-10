@@ -1,0 +1,6 @@
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\bin\Debug\L10_MovieList.exe.config
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\bin\Debug\L10_MovieList.exe
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\bin\Debug\L10_MovieList.pdb
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\obj\Debug\L10_MovieList.csprojResolveAssemblyReference.cache
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\obj\Debug\L10_MovieList.exe
+c:\users\derek\documents\visual studio 2015\Projects\L10_MovieList\L10_MovieList\obj\Debug\L10_MovieList.pdb
