@@ -17,11 +17,11 @@ namespace L10_MovieList
         public static int ValidateInput()
         {
             int result;
-            
-            bool isValid = int.TryParse(Console.ReadLine(), out result);
-
-            if (isValid)
+            ConsoleKeyInfo UserInput = Console.ReadKey(true);
+                        
+            if (int.TryParse(UserInput.KeyChar.ToString(), out result))
             {
+                Console.WriteLine();
                 return result;
             }
             else

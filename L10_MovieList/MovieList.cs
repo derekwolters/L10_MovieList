@@ -17,22 +17,22 @@ namespace L10_MovieList
     {
         static void Main(string[] args)
         {
-            List<Movie> movies = new List<Movie>();
             bool keepGoing = true;
             String userGenre = "";
             List<string> genreList = new List<string>();
+            List<Movie> movies = new List<Movie>() {
 
-            movies.Add(new Movie("Star Wars", "SciFi"));
-            movies.Add(new Movie("Dune", "SciFi"));
-            movies.Add(new Movie("Indiana Jones", "Adventure"));
-            movies.Add(new Movie("Lord of the Rings", "Fantasy"));
-            movies.Add(new Movie("Titanic", "Romance"));
-            movies.Add(new Movie("The Lion King", "Children's"));
-            movies.Add(new Movie("Step Dads", "Comedy"));
-            movies.Add(new Movie("21 Jump Street", "Comedy"));
-            movies.Add(new Movie("Men In Black", "SciFi"));
-            movies.Add(new Movie("Hitchhiker's Guide to the Galaxy", "SciFi"));            
-
+            new Movie("Star Wars", "SciFi"),
+            new Movie("Dune", "SciFi"),
+            new Movie("Indiana Jones", "Adventure"),
+            new Movie("Lord of the Rings", "Fantasy"),
+            new Movie("Titanic", "Romance"),
+            new Movie("The Lion King", "Children's"),
+            new Movie("Step Dads", "Comedy"),
+            new Movie("21 Jump Street", "Comedy"),
+            new Movie("Men In Black", "SciFi"),
+            new Movie("Hitchhiker's Guide to the Galaxy", "SciFi")
+        };
             while (keepGoing)
             {
                 Console.WriteLine("There are " + movies.Count 
